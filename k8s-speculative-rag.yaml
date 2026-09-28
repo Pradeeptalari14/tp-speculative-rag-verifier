@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: speculative-rag-service
+  namespace: ai-inference
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: speculative-rag
+  template:
+    metadata:
+      labels:
+        app: speculative-rag
+    spec:
+      containers:
+        - name: draft-slm
+          image: vllm/vllm-openai:v0.4.2
+          args: ["--model", "Qwen/Qwen2.5-1.5B-Instruct", "--port", "8000"]
+          resources:
+            limits:
+              nvidia.com/gpu: 1
+        - name: verifier-llm
+          image: vllm/vllm-openai:v0.4.2
+          args: ["--model", "meta-llama/Meta-Llama-3.1-70B-Instruct", "--port", "8001", "--tensor-parallel-size", "4"]
+          resources:
+            limits:
+              nvidia.com/gpu: 4

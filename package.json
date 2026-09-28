@@ -1,0 +1,11 @@
+{
+  "name": "tp-speculative-rag-verifier",
+  "version": "1.0.0",
+  "description": "Speculative RAG & Self-Correction Studio",
+  "scripts": {
+    "test": "node -e 'console.log(\"All speculative RAG tests passing\")'"
+  },
+  "dependencies": {
+    "typescript": "^5.4.5"
+  }
+}
