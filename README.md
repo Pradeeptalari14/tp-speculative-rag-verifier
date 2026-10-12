@@ -1,3 +1,6 @@
+[![Ecosystem](https://img.shields.io/badge/Portfolio%20Ecosystem-341%20Studios-6366f1.svg)](https://pradeeptalari.me/projects/)
+[![Architecture DAG](https://img.shields.io/badge/Architecture-DAG%20%26%20Course-10b981.svg)](https://pradeeptalari.me/tools/repo-learning/)
+
 # Speculative RAG & Self-Correction Studio
 
 [![CI SRE Validation](https://github.com/Pradeeptalari14/tp-speculative-rag-verifier/actions/workflows/sre-validation.yml/badge.svg)](https://github.com/Pradeeptalari14/tp-speculative-rag-verifier/actions)
@@ -20,3 +23,6 @@ git clone https://github.com/Pradeeptalari14/tp-speculative-rag-verifier.git
 cd tp-speculative-rag-verifier
 bash scripts/validate.sh
 ```
+
+---
+*Synchronized with [Speculative RAG & Self-Correction Studio Studio](https://pradeeptalari.me/tools/speculative-rag-pipeline/) & [Repository Learning DAG](https://pradeeptalari.me/tools/repo-learning/) — [Talari Pradeep Portfolio](https://pradeeptalari.me)*
